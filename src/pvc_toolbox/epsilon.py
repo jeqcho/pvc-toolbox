@@ -233,8 +233,9 @@ def compute_critical_epsilon(
     -------
     float
         The critical epsilon ε* for the given alternative.
-        - If ε* < 0: alternative is in the standard (ε=0) PVC
-        - If ε* ≥ 0: alternative requires ε > ε* to be in the ε-PVC
+        - If ε* = 0: alternative is at the boundary (in ε-PVC for any ε > 0)
+        - If ε* > 0: alternative requires ε > ε* to be in the ε-PVC
+        - If ε* = -1: trivial case (single alternative, always in core)
 
     Examples
     --------
